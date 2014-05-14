@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*-----------general-----------*/
+
+.block-1 {
+	color: #fff;
+	background-color: #fff;
+	height: 300px;
+}
+
+header {
+	background-color: #fff;
+	height: 50px;
+}
+
+.logo-temp {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.unit {
+	display:block;
+	width: 150px;
+	padding-top: 10px;
+}
+
+#description {
+	padding-left: 15px;
+	}
+
+h1 {
+	margin: 0;
+}
+
+strong {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+
+p {
+	width: 130px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: 14px;
+	margin: 0;
+}
+
+
+
+img {
+	margin: 10px;
+	max-width: 200px;
+}
+
+.temp-button {
+	margin-left: 0;
+
+}
+
+.next {
+	background-color: #000;
+	color: #fff;
+}
+
+/*-----------carousel-----------*/
+
+.carousel {
+	position: relative;
+	padding-bottom: 50%;
+}
+
+.items {
+	padding-top: 20px;
+}
+
+.carousel img {
+	position: absolute;
+	left: 10%;
+	height: 50%;
+}
+
+.carousel-buttons {
+	position: absolute;
+	z-index: 1000;
+	
+}
+
+
+.carousel [data-state="current"] {
+	z-index: 100;
+}
+
+.carousel [data-state="incoming"] {
+	z-index: 101;
+}
+
+
+/*-----------animation-----------*/
+
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 5em 0;
+}
+
+.orbit-section {
+	background-color: #9f221b;
+}
+
+.cross-wrapper {
+	position: relative;
+}
+
+.cross {
+	width: 100px;
+}
+
+.twodot {
+	margin-left: -20px;
+	left: 50%;
+	top: -40px;
+	width: 40px;
+	/*Dont forget the rest of the vendor prefixes*/
+	/*-webkit-transform: rotate(-120deg);*/
+	-webkit-transform-origin: 50% 90px;
+	-webkit-animation: rocket-rotate 6s linear infinite;
+	/* --Long version--
+	-webkit-animation-name: rocket-rotate;
+	-webkit-animation-duration: 6s;
+	-webkit-timing-function: linear;
+	-webkit-iteration-count: infinite;
+	*/
+	position: absolute;
+}
+
+@-webkit-keyframes rocket-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@media screen and (min-width: 430px) {
+
+}
+	
+
